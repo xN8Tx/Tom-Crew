@@ -1,0 +1,23 @@
+// basics
+$dark: #4F4F4F;
+
+body {
+    overflow-x: hidden;
+    &.lock {
+        overflow-y: hidden;
+    }
+}
+
+.wrapper {
+    margin: 0 20px;
+}
+
+.wrap {
+    margin: 0 10%;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

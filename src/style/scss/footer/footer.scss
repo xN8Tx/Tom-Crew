@@ -1,0 +1,68 @@
+// footer
+
+.footer { 
+    margin-top: 50px;
+    border-top: 1px solid #464847;
+    height: 50px;
+
+    &__logo {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: $dark;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+
+            color: $dark;
+
+            transition: all ease-in 0.3s;
+
+            &:not(:first-child) {
+                padding-left: 25px;
+            }
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .footer {
+        height: auto;
+        padding: 20px 0;
+
+        .wrap {
+            margin: 0 20px;
+            display: block;
+        }
+
+        &__nav {
+            margin-top: 10px;
+            ul {
+                display: block;
+            }
+
+            li {
+                &:not(:first-child) {
+                    padding-left: 0;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
